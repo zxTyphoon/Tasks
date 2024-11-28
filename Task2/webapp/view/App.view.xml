@@ -1,0 +1,47 @@
+<mvc:View controllerName="webapp.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:control="webapp.control"
+    displayBlock="true">
+
+    <Shell>
+        <App>
+            <pages>
+                <Page title="Tyler Straub">
+                    <content>
+                        <Panel headerText="My name is Sean Tyler Straub"
+                            class="sapUiResponsiveMargin"
+                            width="auto">
+                            <Text text="I am a student at the State Cooperative University Mannheim studying Business Informatics with a focus on Software Engineering.
+                                As a cooperative student, I am working in the Corporate IT department at Freudenberg &amp; Co. KG" />
+                        </Panel>
+
+                        <Panel headerText="My Hobbies"
+                            class="sapUiResponsiveMargin"
+                            width="auto">
+                            <List>
+                                <StandardListItem title="🎮 Playing Video Games" />
+                                <StandardListItem title="👨‍💻 Programming" />
+                                <StandardListItem title="🏋🏼‍♂️ Going to the Gym" />
+                                <StandardListItem title="🏀 Playing Basketball" />
+                            </List>
+                        </Panel>
+
+                        <Panel headerText="You can contact me here"
+                            class="sapUiResponsiveMargin"
+                            width="auto">
+                            <List>
+                                <control:StandardListItemEx title="📧 Email"
+                                    link="mailto:seantylerstraub@gmail.com" />
+                                <control:StandardListItemEx title="🔗 LinkedIn"
+                                    link="https://www.linkedin.com/in/tyler-straub-8b85b7252/" />
+                                <control:StandardListItemEx title="&lt;/&gt; GitHub"
+                                    link="https://github.com/zxTyphoon" />
+                            </List>
+                        </Panel>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

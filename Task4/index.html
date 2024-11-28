@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic List with Color Change Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #color-change-count {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Item List</h1>
+  
+  <input type="text" id="item-input" placeholder="Enter new item" />
+  <button id="add-button">Add Item</button>
+  
+  <ul id="item-list"></ul>
+  
+  <div id="color-change-count">Color changes: 0</div>
+
+  <script>
+    let colorChangeCount = 0;
+
+    document.getElementById('add-button').addEventListener('click', function() {
+      const inputText = document.getElementById('item-input').value;
+      const itemList = document.getElementById('item-list');
+      const colorChangeCountElement = document.getElementById('color-change-count');
+
+      if (inputText.trim() !== "") {
+        const listItem = document.createElement('li');
+        listItem.textContent = inputText;
+        itemList.appendChild(listItem);
+        document.getElementById('item-input').value = "";
+      } else {
+        colorChangeCount++;
+        document.body.style.backgroundColor = colorChangeCount % 2 === 0 ? "#f0f0f0" : "#ffcccb";
+        colorChangeCountElement.textContent = `Color changes: ${colorChangeCount}`;
+      }
+    });
+  </script>
+
+</body>
+</html>

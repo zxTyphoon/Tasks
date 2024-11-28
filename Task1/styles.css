@@ -1,0 +1,29 @@
+.main {
+	text-align: center;
+	background-color: rgb(85, 85, 85);
+	color: antiquewhite;
+	font-size: larger;
+	padding: 0;
+}
+
+h1 {
+	color: powderblue;
+}
+
+a {
+	color: steelblue;
+}
+
+ul {
+	list-style-position: inside;
+}
+
+li {
+	display: inline-block;
+	color: aliceblue;
+	font-weight: bold;
+	margin-right: 5%;
+}
+div {
+	margin: 5%;
+}
