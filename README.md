@@ -1,0 +1,1 @@
+# Tasks to get better at Fullstack Application Development with SAP UI5 and CAPM
