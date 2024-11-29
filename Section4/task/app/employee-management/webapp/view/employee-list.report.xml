@@ -1,0 +1,31 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  xmlns:l="sap.ui.layout"
+  controllerName="task.employee.management.controller.EmployeeList">
+  
+  <Table id="employeeList" items="{/Employees}">
+    <columns>
+      <Column>
+        <Text text="First Name"/>
+      </Column>
+      <Column>
+        <Text text="Last Name"/>
+      </Column>
+      <Column>
+        <Text text="Date of Joining"/>
+      </Column>
+    </columns>
+    
+    <items>
+      <ColumnListItem press="onItemPress">
+        <cells>
+          <Text text="{firstName}"/>
+          <Text text="{lastName}"/>
+          <Text text="{dateOfJoining}"/>
+        </cells>
+      </ColumnListItem>
+    </items>
+  </Table>
+  
+</mvc:View>

@@ -1,0 +1,22 @@
+<mvc:View
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+  controllerName="task.employee.management.controller.EmployeeObject">
+  
+  <VBox id="employeeDetailsVBox">
+    <Label id="firstNameLabel" text="First Name"/>
+    <Input id="firstName" value="{firstName}" />
+
+    <Label id="lastNameLabel" text="Last Name"/>
+    <Input id="lastName" value="{lastName}" />
+
+    <Label id="dateOfJoiningLabel" text="Date of Joining"/>
+    <Input id="dateOfJoining" value="{dateOfJoining}" />
+
+    <Label id="addressLabel" text="Address"/>
+    <Input id="address" value="{address}" />
+
+    <Button id="saveButton" text="Save" press="onSave"/>
+  </VBox>
+  
+</mvc:View>
